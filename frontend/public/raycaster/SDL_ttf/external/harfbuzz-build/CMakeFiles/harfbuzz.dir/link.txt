@@ -1,0 +1,2 @@
+/home/jack/Documents/emsdk/upstream/emscripten/emar qc libharfbuzz.a CMakeFiles/harfbuzz.dir/src/harfbuzz.cc.o
+/home/jack/Documents/emsdk/upstream/emscripten/emranlib libharfbuzz.a

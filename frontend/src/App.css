@@ -69,6 +69,10 @@ li:hover {
 
 p {
   color: var(--text-secondary);
+  max-width: 800px;      
+  margin: 0 1.5rem; 
+  padding: 0 1rem;       
+  line-height: 1.8;      
 }
 
 .loading {

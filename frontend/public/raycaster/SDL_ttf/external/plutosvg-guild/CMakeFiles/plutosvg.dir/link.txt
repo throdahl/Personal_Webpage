@@ -1,0 +1,2 @@
+/home/jack/Documents/emsdk/upstream/emscripten/emar qc libplutosvg.a CMakeFiles/plutosvg.dir/source/plutosvg.c.o
+/home/jack/Documents/emsdk/upstream/emscripten/emranlib libplutosvg.a

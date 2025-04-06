@@ -1,8 +1,8 @@
-# Install script for directory: /home/jack/Documents/C++/raycaster
+# Install script for directory: /home/jack/Documents/TypeScript/Personal_Webpage/raycaster
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jack/Documents/C++/raycaster/build/web")
+  set(CMAKE_INSTALL_PREFIX "/home/jack/Documents/TypeScript/Personal_Webpage/raycaster/build/web")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jack/Documents/C++/raycaster/build/web/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jack/Documents/TypeScript/Personal_Webpage/raycaster/build/web/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
