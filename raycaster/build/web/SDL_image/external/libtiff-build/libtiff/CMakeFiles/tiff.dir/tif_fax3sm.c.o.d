@@ -1,0 +1,20 @@
+SDL_image/external/libtiff-build/libtiff/CMakeFiles/tiff.dir/tif_fax3sm.c.o: \
+  /home/jack/Documents/C++/raycaster/SDL_image/external/libtiff/libtiff/tif_fax3sm.c \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stdint.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/jack/Documents/C++/raycaster/SDL_image/external/libtiff/libtiff/tiff.h \
+  /home/jack/Documents/C++/raycaster/build/web/SDL_image/external/libtiff-build/libtiff/tiffconf.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stddef.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_header_macro.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_size_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_wchar_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_null.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_offsetof.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/inttypes.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/inttypes.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/jack/Documents/C++/raycaster/SDL_image/external/libtiff/libtiff/tif_fax3.h

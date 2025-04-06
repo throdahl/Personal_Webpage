@@ -1,0 +1,1 @@
+/home/jack/Documents/emsdk/upstream/emscripten/em++ @CMakeFiles/sdl-min.dir/objects1 -o sdl-min.html @CMakeFiles/sdl-min.dir/linkLibs.rsp

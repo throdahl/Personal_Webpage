@@ -1,0 +1,34 @@
+SDL_ttf/external/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-blend.c.o: \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/source/plutovg-blend.c \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/source/plutovg-private.h \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/include/plutovg.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stdbool.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/source/plutovg-utils.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stdint.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stddef.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_header_macro.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_size_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_wchar_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_null.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_offsetof.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/strings.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/float.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/float.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/compat/math.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/math.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/limits.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/limits.h

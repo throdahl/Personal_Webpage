@@ -1,0 +1,23 @@
+SDL_ttf/external/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-raster.c.o: \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/source/plutovg-ft-raster.c \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/source/plutovg-ft-raster.h \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/source/plutovg-ft-types.h \
+  /home/jack/Documents/C++/raycaster/SDL_ttf/external/plutovg/source/plutovg-ft-math.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/setjmp.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/setjmp.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stddef.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_header_macro.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_size_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_wchar_t.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_null.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/__stddef_offsetof.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/limits.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/bits/limits.h

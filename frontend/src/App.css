@@ -1,0 +1,149 @@
+/* App.css - Subtle Professional Green Theme */
+
+:root {
+  --primary-green: #4caf50;
+  --light-green: #e8f5e9;
+  --medium-green: #c8e6c9;
+  --dark-green: #388e3c;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --background: #fafafa;
+  --card-background: #ffffff;
+  --border-color: #e0e0e0;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--dark-green);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--medium-green);
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+li {
+  background-color: var(--card-background);
+  border-left: 3px solid var(--primary-green);
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+.loading {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 3px solid #d32f2f;
+}
+
+/* Status indicators */
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status-online {
+  background-color: var(--primary-green);
+}
+
+.status-offline {
+  background-color: var(--text-secondary);
+}
+
+/* Button styling */
+button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--dark-green);
+}
+
+button:disabled {
+  background-color: var(--border-color);
+  cursor: not-allowed;
+}
+
+/* Card container for content */
+.card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  border-bottom: 1px solid var(--medium-green);
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+  
+  li {
+    padding: 0.8rem 1rem;
+  }
+}

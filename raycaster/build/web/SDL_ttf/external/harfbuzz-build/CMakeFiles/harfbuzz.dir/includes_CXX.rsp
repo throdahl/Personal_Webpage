@@ -1,0 +1,1 @@
+-I/home/jack/Documents/C++/raycaster/SDL_ttf/external/harfbuzz/src -I"/home/jack/Documents/C++/raycaster/build/web/SDL_ttf/external/harfbuzz-build/src" -I"/home/jack/Documents/C++/raycaster/build/web/SDL_ttf/external/freetype-build/include" -I/home/jack/Documents/C++/raycaster/SDL_ttf/external/freetype/include
