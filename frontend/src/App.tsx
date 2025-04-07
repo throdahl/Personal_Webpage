@@ -47,7 +47,7 @@ function App() {
             <Link to="/about">About Me</Link>
           </li>
           <li>
-            <Link to="/raycaster/sdl-min.html">Raycaster Demo</Link>
+            <Link to="/demo">Raycaster Demo</Link>
           </li>
           <li>
             <Link to="/resume">Resume</Link>
@@ -67,6 +67,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path='/demo' element={<Demo />} />
       </Routes>
       </div>
     </Router>
@@ -124,85 +125,17 @@ const Resume: React.FC = () => {
 
 const Demo: React.FC = () => {
   useEffect(() => {
-    // Inject inline script
-    const inlineScript = document.createElement('script');
-    inlineScript.type = 'text/javascript';
-    inlineScript.innerHTML = `
-      var statusElement = document.getElementById('status');
-      var progressElement = document.getElementById('progress');
-      var spinnerElement = document.getElementById('spinner');
-      var canvasElement = document.getElementById('canvas');
-      var outputElement = document.getElementById('output');
-      if (outputElement) outputElement.value = '';
-
-      canvasElement.addEventListener('webglcontextlost', (e) => {
-        alert('WebGL context lost. You will need to reload the page.');
-        e.preventDefault();
-      }, false);
-
-      var Module = {
-        print: function(...args) {
-          console.log(...args);
-          if (outputElement) {
-            var text = args.join(' ');
-            outputElement.value += text + "\\n";
-            outputElement.scrollTop = outputElement.scrollHeight;
-          }
-        },
-        canvas: canvasElement,
-        setStatus: function(text) {
-          Module.setStatus.last = Module.setStatus.last || { time: Date.now(), text: '' };
-          if (text === Module.setStatus.last.text) return;
-          var m = text.match(/([^(]+)\\((\\d+(\\.\\d+)?)\\/(\\d+)\\)/);
-          var now = Date.now();
-          if (m && now - Module.setStatus.last.time < 30) return;
-          Module.setStatus.last.time = now;
-          Module.setStatus.last.text = text;
-          if (m) {
-            text = m[1];
-            progressElement.value = parseInt(m[2])*100;
-            progressElement.max = parseInt(m[4])*100;
-            progressElement.hidden = false;
-            spinnerElement.hidden = false;
-          } else {
-            progressElement.value = null;
-            progressElement.max = null;
-            progressElement.hidden = true;
-            if (!text) spinnerElement.style.display = 'none';
-          }
-          statusElement.innerHTML = text;
-        },
-        totalDependencies: 0,
-        monitorRunDependencies: function(left) {
-          this.totalDependencies = Math.max(this.totalDependencies, left);
-          Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies - left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
-        }
-      };
-      Module.setStatus('Downloading...');
-      window.onerror = function(event) {
-        Module.setStatus('Exception thrown, see JavaScript console');
-        spinnerElement.style.display = 'none';
-        Module.setStatus = function(text) {
-          if (text) console.error('[post-exception status] ' + text);
-        };
-      };
-    `;
-    document.body.appendChild(inlineScript);
-
-    // Inject external script (ensure sdl-min.js isn't already loaded to avoid duplicate declarations)
-    if (!document.getElementById('sdl-script')) {
-      const externalScript = document.createElement('script');
-      externalScript.type = 'text/javascript';
-      externalScript.src = 'sdl-min.js';
-      externalScript.async = true;
-      externalScript.id = 'sdl-script';
-      document.body.appendChild(externalScript);
+    // When Demo mounts, get the canvas and display it.
+    const canvasElement = document.getElementById('canvas');
+    if (canvasElement) {
+      window.Module.canvas = canvasElement;
+      canvasElement.style.display = 'block';
     }
-
-    // Cleanup on unmount
+    // When Demo unmounts, hide the canvas.
     return () => {
-      document.body.removeChild(inlineScript);
-      // Optionally, you might not want to remove the external script if it should persist.
+      if (canvasElement) {
+        canvasElement.style.display = 'none';
+      }
     };
   }, []);
 
@@ -212,7 +145,39 @@ const Demo: React.FC = () => {
         <h1>Raycaster Demo</h1>
       </header>
       <main>
+        {/* Spinner and Status */}
+        <div className="spinner" id="spinner"></div>
+        <div className="emscripten" id="status">Downloading...</div>
         
+        {/* Controls */}
+        <span id="controls">
+          <span>
+            <input type="checkbox" id="resize" /> Resize canvas
+          </span>
+          <span>
+            <input type="checkbox" id="pointerLock" defaultChecked /> Lock/hide mouse pointer&nbsp;&nbsp;&nbsp;
+          </span>
+          <span>
+            <input 
+              type="button" 
+              value="Fullscreen" 
+              onClick={() => {
+                if (window.Module && window.Module.requestFullscreen) {
+                  window.Module.requestFullscreen();
+                }
+              }} 
+            />
+          </span>
+        </span>
+        
+        {/* Progress Bar */}
+        <div className="emscripten">
+          <progress value="0" max="100" id="progress" hidden={true}></progress>
+        </div>
+        
+        {/* The canvas element is pre-rendered in index.html */}
+        {/* Output Textarea */}
+        <textarea id="output" rows={8}></textarea>
       </main>
     </div>
   );

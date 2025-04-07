@@ -1,8 +1,8 @@
 CMakeFiles/sdl-min.dir/src/main.cpp.o: \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/src/main.cpp \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_stdinc.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_main.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_platform_defines.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_stdinc.h \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdarg.h \
   /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stdarg.h \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdarg.h \
@@ -44,27 +44,20 @@ CMakeFiles/sdl-min.dir/src/main.cpp.o: \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/wchar.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_begin_code.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_close_code.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_assert.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_asyncio.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_atomic.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_error.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_events.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_audio.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_endian.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_error.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_mutex.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_atomic.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_thread.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_properties.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_iostream.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_bits.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_blendmode.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_camera.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_pixels.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_surface.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_blendmode.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_rect.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_clipboard.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_cpuinfo.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_dialog.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_video.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_events.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_gamepad.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_guid.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_joystick.h \
@@ -73,15 +66,40 @@ CMakeFiles/sdl-min.dir/src/main.cpp.o: \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_keyboard.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_keycode.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_scancode.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_video.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_mouse.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_pen.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_touch.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_init.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_main_impl.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_macros.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_types.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdbool.h \
+  /home/jack/Documents/emsdk/upstream/lib/clang/21/include/stdbool.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_js.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/promise.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdlib.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/wget.h \
+  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/version.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_assert.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_asyncio.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_bits.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_clipboard.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_cpuinfo.h \
+  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_dialog.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_filesystem.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_gpu.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_haptic.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_hidapi.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_hints.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_init.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_loadso.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_locale.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_log.h \
@@ -98,8 +116,6 @@ CMakeFiles/sdl-min.dir/src/main.cpp.o: \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_tray.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_version.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_oldnames.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_main.h \
-  /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL/include/SDL3/SDL_main_impl.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL_image/include/SDL3_image/SDL_image.h \
   /home/jack/Documents/TypeScript/Personal_Webpage/raycaster/SDL_ttf/include/SDL3_ttf/SDL_ttf.h \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string_view \
@@ -323,10 +339,6 @@ CMakeFiles/sdl-min.dir/src/main.cpp.o: \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/new \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__exception/exception.h \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdlib \
-  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
-  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdlib.h \
-  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
-  /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/datasizeof.h \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/is_always_bitcastable.h \
   /home/jack/Documents/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/is_equality_comparable.h \

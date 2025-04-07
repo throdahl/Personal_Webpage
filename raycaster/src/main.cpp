@@ -1,7 +1,8 @@
-#define SDL_MAIN_USE_CALLBACKS 1
 
-#include <SDL3/SDL.h>
+#define SDL_MAIN_USE_CALLBACKS 1
 #include <SDL3/SDL_main.h>
+#include <emscripten.h>
+#include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 #include <SDL3_ttf/SDL_ttf.h>
 #include <string_view>
@@ -283,10 +284,8 @@ void drawBullets(SDL_Renderer* renderer, const std::vector<Bullet>& bullets) {
         
     }
 }
-SDL_AppResult SDL_AppIterate(void *appstate)
-{
-    auto* app = (AppContext*)appstate;
-    Uint32 frameStart = SDL_GetTicks();
+
+void Move() {
     if(movement.up) {
         float newX = player.x + player.dx * 2;
         float newY = player.y + player.dy * 2;
@@ -338,27 +337,31 @@ SDL_AppResult SDL_AppIterate(void *appstate)
             cout << "Bullet hit wall at " << map1.findMapIndex(bullet.x, bullet.y) << endl;
         }
     }
+}
+SDL_AppResult SDL_AppIterate(void *appstate)
+{
+    auto* app = (AppContext*)appstate;
+    Uint32 frameStart = SDL_GetTicks();
+    Move();
     SDL_SetRenderDrawColorFloat(app->renderer, 0.3, 0.3, 0.3, 0);
     SDL_RenderClear(app->renderer);
     SDL_Rect clipRect = { 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT };
     SDL_SetRenderClipRect(app->renderer, &clipRect);
     drawRays(app);
-    drawMap(app->renderer);
     /*
+    drawMap(app->renderer);
     drawPlayer(app->renderer);
-    */
     drawBullets(app->renderer, player.bullets);
+    */
     SDL_RenderPresent(app->renderer);
 
     //cap frames per second
     
-    // Original frame timing code for native builds
     Uint32 frameTime = SDL_GetTicks() - frameStart;
     if(frameTime < 16)
         SDL_Delay(32 - frameTime);
     if(app->app_quit != SDL_APP_CONTINUE)
         return app->app_quit;
-    
     return SDL_APP_CONTINUE;
 }
 
